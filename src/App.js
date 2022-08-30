@@ -1,5 +1,5 @@
 import "./App.css";
-import BingSearch from "./components/BingSearch";
+import BingSearch from "../../bing-search-02/src/components/BingSearch";
 
 function App() {
 	return (

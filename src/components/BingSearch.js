@@ -30,10 +30,11 @@ const BingSearch = () => {
 				query: inputQuery,
 			});
 			const data = response.data;
+			console.log(data.webPages.value);
 			if ("webPages" in data) {
 				setSearchResults(data.webPages.value);
 
-				setAddress(data.webPages.value[0].displayUrl);
+				setAddress(data.webPages.value[0].url);
 				setSnippet(data.webPages.value[0].snippet);
 				setWebPageName(data.webPages.value[0].name);
 			} else {

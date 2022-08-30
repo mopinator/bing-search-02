@@ -30,7 +30,6 @@ const BingSearch = () => {
 				query: inputQuery,
 			});
 			const data = response.data;
-			console.log(data.webPages.value);
 			if ("webPages" in data) {
 				setSearchResults(data.webPages.value);
 

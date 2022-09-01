@@ -49,12 +49,22 @@ const BingSearch = () => {
 	};
 	return (
 		<div>
+			<nav>
+				<a href="">Cars</a>
+				<a href="">Turners Subscription</a>
+				<a href="">Truscks & Machinery</a>
+				<a href="">Damaged & End of Life</a>
+				<a href="">Motorcycles</a>
+				<a href="">General Goods</a>
+				<a href="">Buses, Caravans & Motorhomes</a>
+			</nav>
+
 			<form action="" onSubmit={handleSearch} className={notFound ? "not-found" : "search-form"}>
 				<input type="text" onChange={handleChange} id="search-bar-input" placeholder="Search Our FAQs" />
 				<button id="submit-btn">Search</button>
 			</form>
 			<div>
-				<h1>Search</h1>
+				<h1>Search Results</h1>
 
 				<a href={address}>
 					<h3>{webPageName}</h3>{" "}
